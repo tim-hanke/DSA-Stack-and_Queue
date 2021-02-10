@@ -15,7 +15,7 @@ class Queue {
     const node = new _Node(data);
 
     if (this.first === null) {
-      this.first - node;
+      this.first = node;
     }
 
     if (this.last) {
@@ -39,3 +39,5 @@ class Queue {
     return node.data;
   }
 }
+
+module.exports = Queue;
